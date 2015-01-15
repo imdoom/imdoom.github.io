@@ -299,6 +299,12 @@ a.dotted-link:hover {
   margin-left: 5vw;
 }
 
+.pf {
+  content: url("./assets/product-finder.png");
+  height: 30vw;
+  margin-left: 5vw;
+}
+
 .cs {
   content: url("./assets/135154705-bf2946a9-6fb7-43e5-972f-a363325e6b79.png");
   height: 30vw;
@@ -338,7 +344,7 @@ a.dotted-link:hover {
   font-weight: 400;
   font-size: 1.5vw;
   color: black;
-  width: 30vw;
+  width: 34vw;
   margin-left: 10vw;
 }
 

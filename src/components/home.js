@@ -161,10 +161,10 @@ const Home = () => {
                 environment—accessible from anywhere and convey results with
                 beautiful, interactive maps and apps for data storytelling that
                 drives insight and action. I lead the UI/UX development on the
-                ArcGIS Notebooks team at Esri where I helped build key features
-                like tasks scheduler, jupyterlab extension, collboration &
-                sharing, spacial data analysis, etc. and implemented inclusive
-                design principles like localization, internationalization,
+                ArcGIS Notebooks team at Esri where I built key features like
+                tasks scheduler, jupyterlab extension, collboration & sharing,
+                spacial data analysis, etc. and implemented inclusive design
+                principles like localization, internationalization,
                 assessibility, responsive design etc.
               </div>
             </div>
@@ -196,14 +196,14 @@ const Home = () => {
             <div class="font-custom flex items-stretch">
               <img class="cs"></img>
               <div class="notebooks-section">
-                Course scheduler schedules time conflicting courses with various
-                and to create and modify schedules for the semeseter and saves
-                the schedule in the student's login. Implemented SSO using
-                google API. Built with modern React and JavaScript. I worked as
-                in a group to build this app as part of my university course
-                callled rapid prototyping at Northwestern University. Built with
-                React/TypeScript and Firebase for authentication,
-                fetching/updating live data and hosting.
+                Course scheduler schedules time conflicting courses with
+                overlapping schedules and to create and modify schedules for the
+                semeseter and saves the schedule in the student's login.
+                Implemented SSO using google API. Built with modern React and
+                JavaScript. I built this app for my university course called
+                rapid prototyping at Northwestern. Built with React/TypeScript
+                and Firebase for authentication, fetching/updating live data and
+                hosting.
               </div>
             </div>
           </section>
@@ -218,15 +218,15 @@ const Home = () => {
                 purshases. I worked on both web and mobile versions keeping in
                 mind the responsiveness and custom components requirements for
                 tablets. Various UX considerations were implemented such as
-                checkbox labels working in tandem with the checkbox, nearest
-                value rounding for denominations, progress panels highlighting
+                clicking checkbox label checks the checkbox, nearest value
+                rounding for denominations, progress panels highlighting
                 completed steps, breadcrumb progress bars showing mid steps,
                 responsive scaling in vertical as well as horizontal display in
                 iPad and scaling with screen size in the desktop application.
                 The technology stack used was HTML5/Css3 and Bootstrap in
                 front-end side and ASP.NET for back-end.
               </div>
-              <img class="md"></img>
+              <img class="pf"></img>
             </div>
           </section>
         </div>
