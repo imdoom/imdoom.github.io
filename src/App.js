@@ -1,27 +1,15 @@
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/home";
+import Password from "./components/password";
 
 function App() {
   return (
     <div class="app">
-      <header>
-        <div class="color-blue font-custom text-7xl p-4">Akshay's site</div>
-        <div class="font-custom text-3xl">A bunch of mini projects</div>
-        <div class="flex">
-          <a
-            href="google.com"
-            class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-          >
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
-            </h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
-            </p>
-          </a>
-        </div>
-      </header>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/password" element={<Password />} />
+      </Routes>
     </div>
   );
 }
