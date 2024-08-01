@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.05062801.css",
-    "main.js": "/static/js/main.ada388ab.js",
+    "main.css": "/static/css/main.21ffc6f2.css",
+    "main.js": "/static/js/main.1db96960.js",
     "static/js/453.bb828c5d.chunk.js": "/static/js/453.bb828c5d.chunk.js",
     "static/media/IMG_5685-modified.png": "/static/media/IMG_5685-modified.51f6a2cf4af02f3773c6.png",
-    "static/media/jeshoots-com-pUAM5hPaCRI-unsplash.jpg": "/static/media/jeshoots-com-pUAM5hPaCRI-unsplash.20949a481df9cb1282fa.jpg",
+    "static/media/joanna-kosinska-1_CMoFsPfso-unsplash.jpg": "/static/media/joanna-kosinska-1_CMoFsPfso-unsplash.4731dd96f12e614f082e.jpg",
+    "static/media/leone-venter-VieM9BdZKFo-unsplash.jpg": "/static/media/leone-venter-VieM9BdZKFo-unsplash.8ddad695876ebc61413a.jpg",
     "index.html": "/index.html",
-    "main.05062801.css.map": "/static/css/main.05062801.css.map",
-    "main.ada388ab.js.map": "/static/js/main.ada388ab.js.map",
+    "main.21ffc6f2.css.map": "/static/css/main.21ffc6f2.css.map",
+    "main.1db96960.js.map": "/static/js/main.1db96960.js.map",
     "453.bb828c5d.chunk.js.map": "/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05062801.css",
-    "static/js/main.ada388ab.js"
+    "static/css/main.21ffc6f2.css",
+    "static/js/main.1db96960.js"
   ]
 }
