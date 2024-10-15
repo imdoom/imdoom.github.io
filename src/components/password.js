@@ -1,6 +1,6 @@
 import { React, useState, useEffect } from "react";
 
-const rules = {
+const rulesMap = {
   ".{6,}": "The password should be minimum 6 characters",
   "^(?=.*[0-9]).{6,}$": "The password should have atleast one number.",
   "^(?=.*[0-9])(?=.*[A-Z]).{6,}$":
@@ -11,54 +11,51 @@ const rules = {
 };
 
 const Password = () => {
-  const [password, setPassword] = useState("");
-  const rulesArr = Object.keys(rules);
-  const [currRule, setCurrRule] = useState(0);
+  const rules = Object.keys(rulesMap);
+  const [processed, setProcessed] = useState([]);
+  const [initPass, setInitPass] = useState(true);
+  const [rule, setRule] = useState(0);
 
-  useEffect(() => {
-    if (!password) {
-      setProcessed([]);
-      setCurrRule(0);
-    } else {
-    }
-
-    if (currRule < rulesArr.length) {
-      rulesArr.find((rule) => {
-        if (rule in processed) {
-          return false;
-        } else {
-          const regex = new RegExp(rule);
-          if (rules[rule] === "The password digits should add upto 13") {
-            let chars = [...password],
-              sum = 0;
-            chars.forEach((char) => {
-              console.log(Number(char));
-              if (Number(char)) {
-                sum += Number(char);
-              }
-            });
-            if (sum === 13) {
-              return true;
-            }
-          } else {
-            if (regex.test(password)) {
-              return true;
-            }
+  function changePass(password) {
+    setInitPass(false);
+    if (rule < rules.length) {
+      const regex = new RegExp(rules[rule]);
+      if (rulesMap[rules[rule]] === "The password digits should add upto 13") {
+        let chars = [...password],
+          sum = 0;
+        chars.forEach((char) => {
+          if (!isNaN(Number(char))) {
+            sum += Number(char);
           }
-          return false;
+        });
+        if (sum === 13) {
+          setProcessed([...processed, rules[rule]]);
+          setRule(rule + 1);
         }
-      });
+      } else {
+        if (regex.test(password)) {
+          setProcessed([...processed, rules[rule]]);
+          setRule(rule + 1);
+        }
+      }
     }
-  }, [password]);
+  }
+
+  function reset() {
+    setProcessed([]);
+    setInitPass(true);
+    setRule(0);
+    document.getElementById("password").value = "";
+  }
 
   function getAlerts() {
     return (
       <div>
-        {currRule ? null : (
+        {initPass || rule === rules.length ? null : (
           <div
             className="flex items-center m-auto p-4 mb-4 w-3/6 text-sm text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800"
             role="alert"
-            key={rules[currRule]}
+            key={rulesMap[rules[rule]]}
           >
             <svg
               className="flex-shrink-0 inline w-4 h-4 me-3"
@@ -71,15 +68,15 @@ const Password = () => {
             </svg>
             <span className="sr-only">Info</span>
             <div>
-              <span className="font-medium">{rules[rule]}</span>
+              <span className="font-medium">{rulesMap[rules[rule]]}</span>
             </div>
           </div>
         )}
-        {processed.map((rule) => (
+        {processed.map((r) => (
           <div
             class="flex items-center m-auto p-4 mb-4 w-3/6 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
             role="alert"
-            key={rules[rule]}
+            key={rulesMap[r]}
           >
             <svg
               class="flex-shrink-0 inline w-4 h-4 me-3"
@@ -92,7 +89,7 @@ const Password = () => {
             </svg>
             <span class="sr-only">Info</span>
             <div>
-              <span className="font-medium">{rules[rule]}</span>
+              <span className="font-medium">{rulesMap[r]}</span>
             </div>
           </div>
         ))}
@@ -103,19 +100,44 @@ const Password = () => {
   return (
     <>
       <p className="text-4xl pt-6">* The password game</p>
-      <div className="mb-6 mt-10">
-        <label
-          for="large-input"
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-        >
-          Please choose a password
-        </label>
-        <input
-          type="text"
-          id="large-input"
-          onChange={(ev) => setPassword(ev.target.value)}
-          className="border-solid border-2 border-indigo-600"
-        />
+      <div className="mb-6 mt-10 flex-1">
+        <div>
+          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+            Please choose a password
+          </label>
+          <input
+            type="text"
+            id="password"
+            onChange={(ev) => changePass(ev.target.value)}
+            className="border-solid border-2 border-indigo-600"
+          />
+        </div>
+        <div class="mt-4">
+          <button
+            type="button"
+            class="text-white font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            onClick={() => reset()}
+          >
+            <svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17.651 7.65a7.131 7.131 0 0 0-12.68 3.15M18.001 4v4h-4m-7.652 8.35a7.13 7.13 0 0 0 12.68-3.15M6 20v-4h4"
+              />
+            </svg>
+            <span class="sr-only">Icon description</span>
+          </button>
+        </div>
       </div>
       {getAlerts()}
     </>
