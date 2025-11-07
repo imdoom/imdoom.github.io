@@ -8,6 +8,8 @@ const rulesMap = {
   "^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*)(]).{6,}$":
     "The password should have atleast one special character",
   "(?=.*[A-Z0-9a-z])": "The password digits should add upto 13",
+  "(?=.*[A-Z0-9a-zpP])": "The password digits should have either p or P in it",
+  "(?=.*[A-Z0-9a-z].*${gg})": "The password digits should a month of the year",
 };
 
 const Password = () => {
