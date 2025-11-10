@@ -335,11 +335,18 @@ img.profile-image {
   font-size: 2vw;
   text-align: left;
   transform: rotate(-6deg);
-  margin: 5vh;
+  margin-left: 5vh;
 }
 .about-me {
   width: 55vw;
   margin-left: 10vw;
+  font-size: 1.5vw;
+  color: #49515a;
+}
+
+.excuse-me {
+  margin-top: 2vh;
+  text-align: center;
   font-size: 1.5vw;
   color: #49515a;
 }

@@ -6,7 +6,8 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   const scrollBottom = () => {
-    window.scrollTo(0, document.body.scrollHeight);
+    // smooth animated scroll to bottom
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
 
   return (
@@ -52,6 +53,16 @@ const Home = () => {
         </div>
       )}
       <div class={loading ? "invisible" : "visible"}>
+        <style>{`@keyframes spinBasket { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  .spin-basket { display: inline-block; animation: spinBasket 1.8s linear infinite; }
+  @keyframes bob { 0% { transform: translateY(0px); } 50% { transform: translateY(-4px); } 100% { transform: translateY(0px); } }
+  @keyframes blink { 0%, 97%, 100% { transform: scaleY(1); } 98%, 99% { transform: scaleY(0.12); } }
+  .robot { display:inline-block; vertical-align:middle; margin-left:6px; animation: bob 2.6s ease-in-out infinite; }
+  .robot svg { display:block; }
+  .robot .eye { transform-origin: center; animation: blink 4s infinite; }
+  @keyframes geekTilt { 0% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-3px) rotate(-8deg); } 100% { transform: translateY(0px) rotate(0deg); } }
+  .geek-emoji { display:inline-block; vertical-align:middle; animation: geekTilt 2.2s ease-in-out infinite; }
+  `}</style>
         <div class="bg2">
           <header class="header">
             <div class="flex container mx-20">
@@ -68,7 +79,70 @@ const Home = () => {
                 <div class="flex flex-col items-start">
                   <h1 class="name font-custom">Akshay Kumar</h1>
                   <h2 class="desc font-custom">
-                    Software Engineer | Technology Enthusiast | Basketball fan
+                    Software Engineer{" "}
+                    <span
+                      className="geek-emoji"
+                      aria-hidden="true"
+                      title="Engineer"
+                    >
+                      👨‍💻
+                    </span>{" "}
+                    | Technology Enthusiast
+                    <span className="robot" aria-hidden="true" title="AI robot">
+                      <svg
+                        width="28"
+                        height="28"
+                        viewBox="0 0 64 64"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <g>
+                          <rect
+                            x="8"
+                            y="18"
+                            width="48"
+                            height="34"
+                            rx="6"
+                            fill="#374151"
+                          />
+                          <rect
+                            x="18"
+                            y="6"
+                            width="28"
+                            height="12"
+                            rx="4"
+                            fill="#111827"
+                          />
+                          <circle
+                            cx="24"
+                            cy="34"
+                            r="4"
+                            fill="#ffffff"
+                            className="eye"
+                          />
+                          <circle
+                            cx="40"
+                            cy="34"
+                            r="4"
+                            fill="#ffffff"
+                            className="eye"
+                          />
+                          <rect
+                            x="30"
+                            y="4"
+                            width="4"
+                            height="6"
+                            rx="2"
+                            fill="#f97316"
+                          />
+                        </g>
+                      </svg>
+                    </span>{" "}
+                    | Basketball fan
+                    <span className="spin-basket ml-2" aria-hidden="true">
+                      🏀
+                    </span>
                   </h2>
                   <ul class="social flex flex-row">
                     <li>
@@ -99,8 +173,10 @@ const Home = () => {
           </header>
           <div>
             <section class="about-me">
-              <div class="about-me-heading font-custom">About Me</div>
-              <div>
+              <div class="about-me-heading font-custom flex justify-center items-center">
+                About Me
+              </div>
+              <div class="excuse-me">
                 <p class="font-custom">
                   Hi! I started my front-end journey 6 years ago when I was
                   asked to build a progress dashboard for my team at my first
@@ -123,21 +199,22 @@ const Home = () => {
         </div>
         <div class="bg">
           <div class="flex games-container">
-            <div>
+            <Link to="/clickspeed">
               <a
                 class="block mx-10 max-w-sm p-6 border border-black bg-white rounded-lg shadow
            hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
               >
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <button className="bg-yellow-100 px-4 text-gray-800 ml-4 rounded-full">
-                    More games incoming...
+                  <button className="bg-green-500 px-4 text-white ml-4 rounded-full">
+                    Click Speed Tester
                   </button>
                 </h5>
                 <p class="font-normal text-gray-700 dark:text-gray-400">
-                  More games incoming...
+                  Test your clicking speed in 10 seconds and save your best
+                  score.
                 </p>
               </a>
-            </div>
+            </Link>
             <Link to="/password">
               <a
                 class="block max-w-sm p-6 border border-black bg-white rounded-lg shadow
@@ -149,24 +226,39 @@ const Home = () => {
                   </button>
                 </h5>
                 <p class="font-normal text-gray-700 dark:text-gray-400">
-                  &^$#(@*#()
+                  How good are you at creating strong passwords?
                 </p>
               </a>
             </Link>
-            <div>
+            <Link to="/memory">
               <a
                 class="block mx-10 max-w-sm p-6 border border-black bg-white rounded-lg shadow
            hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
               >
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <button className="bg-yellow-100 px-4 text-gray-800 ml-4 rounded-full">
-                    More games incoming...
+                  <button className="bg-pink-500 px-4 text-white ml-4 rounded-full">
+                    Memory Sequence
                   </button>
                 </h5>
                 <p class="font-normal text-gray-700 dark:text-gray-400">
-                  More games incoming...
+                  Classic Simon-like memory game — repeat the color sequence.
                 </p>
               </a>
+            </Link>
+          </div>
+          <div class="flex justify-center mt-6">
+            <div
+              class="block mx-10 max-w-sm p-6 border border-black bg-white rounded-lg shadow
+           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            >
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <button className="bg-yellow-500 px-4 text-white ml-4 rounded-full">
+                  Adding more games...
+                </button>
+              </h5>
+              <p class="font-normal text-gray-700 dark:text-gray-400">
+                I'm constantly adding new mini-games — check back soon.
+              </p>
             </div>
           </div>
         </div>
