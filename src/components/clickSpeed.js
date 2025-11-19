@@ -81,7 +81,7 @@ const ClickSpeed = () => {
         }}
       >
         <div className="absolute top-4 right-4">
-          <Link to="/">
+          <Link to="/#games">
             <button className="text-sm font-semibold bg-gray-200 border-2 border-green-500 px-3 py-1 rounded">
               Back
             </button>

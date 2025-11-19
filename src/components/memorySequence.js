@@ -137,7 +137,7 @@ const MemorySequence = () => {
     <>
       <div className="relative">
         <div className="absolute top-4 right-4">
-          <Link to="/">
+          <Link to="/#games">
             <button className="text-sm bg-gray-200 font-semibold border-2 border-green-500 px-3 py-1 rounded">
               Back
             </button>

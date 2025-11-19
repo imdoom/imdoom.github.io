@@ -10,6 +10,17 @@ const Home = () => {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
 
+  useEffect(() => {
+    // If navigated with a hash to the games section, scroll after loading finishes
+    if (!loading && window.location.hash === "#games") {
+      scrollBottom();
+      // remove the hash so repeated navigation doesn't always auto-scroll
+      try {
+        window.history.replaceState(null, "", window.location.pathname);
+      } catch (e) {}
+    }
+  }, [loading]);
+
   return (
     // <header>
     //   <div class="color-blue font-custom text-7xl p-4">Akshay's site</div>
@@ -54,15 +65,8 @@ const Home = () => {
       )}
       <div class={loading ? "invisible" : "visible"}>
         <style>{`@keyframes spinBasket { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-  .spin-basket { display: inline-block; animation: spinBasket 1.8s linear infinite; }
-  @keyframes bob { 0% { transform: translateY(0px); } 50% { transform: translateY(-4px); } 100% { transform: translateY(0px); } }
-  @keyframes blink { 0%, 97%, 100% { transform: scaleY(1); } 98%, 99% { transform: scaleY(0.12); } }
-  .robot { display:inline-block; vertical-align:middle; margin-left:6px; animation: bob 2.6s ease-in-out infinite; }
-  .robot svg { display:block; }
-  .robot .eye { transform-origin: center; animation: blink 4s infinite; }
-  @keyframes geekTilt { 0% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-3px) rotate(-8deg); } 100% { transform: translateY(0px) rotate(0deg); } }
-  .geek-emoji { display:inline-block; vertical-align:middle; animation: geekTilt 2.2s ease-in-out infinite; }
-  `}</style>
+        .spin-basket { display: inline-block; animation: spinBasket 1.8s linear infinite; }
+        `}</style>
         <div class="bg2">
           <header class="header">
             <div class="flex container mx-20">
@@ -79,70 +83,19 @@ const Home = () => {
                 <div class="flex flex-col items-start">
                   <h1 class="name font-custom">Akshay Kumar</h1>
                   <h2 class="desc font-custom">
-                    Software Engineer{" "}
-                    <span
-                      className="geek-emoji"
-                      aria-hidden="true"
-                      title="Engineer"
+                    Software Engineer | Technology Enthusiast | Basketball fan
+                    <a
+                      href="https://www.nba.com/lakers/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-2"
+                      aria-label="LA Lakers"
+                      title="Open LA Lakers site"
                     >
-                      👨‍💻
-                    </span>{" "}
-                    | Technology Enthusiast
-                    <span className="robot" aria-hidden="true" title="AI robot">
-                      <svg
-                        width="28"
-                        height="28"
-                        viewBox="0 0 64 64"
-                        xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true"
-                        focusable="false"
-                      >
-                        <g>
-                          <rect
-                            x="8"
-                            y="18"
-                            width="48"
-                            height="34"
-                            rx="6"
-                            fill="#374151"
-                          />
-                          <rect
-                            x="18"
-                            y="6"
-                            width="28"
-                            height="12"
-                            rx="4"
-                            fill="#111827"
-                          />
-                          <circle
-                            cx="24"
-                            cy="34"
-                            r="4"
-                            fill="#ffffff"
-                            className="eye"
-                          />
-                          <circle
-                            cx="40"
-                            cy="34"
-                            r="4"
-                            fill="#ffffff"
-                            className="eye"
-                          />
-                          <rect
-                            x="30"
-                            y="4"
-                            width="4"
-                            height="6"
-                            rx="2"
-                            fill="#f97316"
-                          />
-                        </g>
-                      </svg>
-                    </span>{" "}
-                    | Basketball fan
-                    <span className="spin-basket ml-2" aria-hidden="true">
-                      🏀
-                    </span>
+                      <span className="spin-basket" aria-hidden="true">
+                        🏀
+                      </span>
+                    </a>
                   </h2>
                   <ul class="social flex flex-row">
                     <li>
@@ -188,10 +141,11 @@ const Home = () => {
                   Science at Northwestern University. Over there, I focused on
                   human computer interaction and took a bunch of UI focused
                   projects and courses. I learnt a lot about usability, rapid
-                  prototyping, design, working in sprint teams, React/JSX, etc.
-                  My career includes stints with two multinational corporations.
-                  I'm looking for my next venture where I can express myself
-                  creatively and work on interesting collaborative projects.
+                  prototyping, design thinking, accessibility, working with
+                  sprint teams, React/JSX, etc. My career includes stints with
+                  two multinational corporations. I'm looking for my next
+                  venture where I can express myself creatively and work on
+                  interesting collaborative projects.
                 </p>
               </div>
             </section>
