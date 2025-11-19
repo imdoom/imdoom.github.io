@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a78d310.css",
-    "main.js": "/static/js/main.e06599fc.js",
+    "main.css": "/static/css/main.ad29dbc8.css",
+    "main.js": "/static/js/main.72d60092.js",
     "static/js/453.bb828c5d.chunk.js": "/static/js/453.bb828c5d.chunk.js",
     "static/media/IMG_5685-modified.png": "/static/media/IMG_5685-modified.51f6a2cf4af02f3773c6.png",
     "static/media/joanna-kosinska-1_CMoFsPfso-unsplash.jpg": "/static/media/joanna-kosinska-1_CMoFsPfso-unsplash.4731dd96f12e614f082e.jpg",
     "static/media/leone-venter-VieM9BdZKFo-unsplash.jpg": "/static/media/leone-venter-VieM9BdZKFo-unsplash.8ddad695876ebc61413a.jpg",
     "static/media/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg": "/static/media/georgie-cobbs-bKjHgo_Lbpo-unsplash.f1fb438d28b88655a158.jpg",
     "index.html": "/index.html",
-    "main.2a78d310.css.map": "/static/css/main.2a78d310.css.map",
-    "main.e06599fc.js.map": "/static/js/main.e06599fc.js.map",
+    "main.ad29dbc8.css.map": "/static/css/main.ad29dbc8.css.map",
+    "main.72d60092.js.map": "/static/js/main.72d60092.js.map",
     "453.bb828c5d.chunk.js.map": "/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a78d310.css",
-    "static/js/main.e06599fc.js"
+    "static/css/main.ad29dbc8.css",
+    "static/js/main.72d60092.js"
   ]
 }
