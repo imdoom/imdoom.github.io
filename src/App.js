@@ -4,6 +4,7 @@ import Home from "./components/home";
 import Password from "./components/password";
 import MemorySequence from "./components/memorySequence";
 import ClickSpeed from "./components/clickSpeed";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/password" element={<Password />} />
         <Route path="/memory" element={<MemorySequence />} />
         <Route path="/clickspeed" element={<ClickSpeed />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </div>
   );

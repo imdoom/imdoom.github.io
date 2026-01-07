@@ -10,6 +10,15 @@ const Home = () => {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
 
+  const scrollToProjects = () => {
+    const el = document.getElementById("projects");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     // If navigated with a hash to the games section, scroll after loading finishes
     if (!loading && window.location.hash === "#games") {
@@ -22,26 +31,6 @@ const Home = () => {
   }, [loading]);
 
   return (
-    // <header>
-    //   <div class="color-blue font-custom text-7xl p-4">Akshay's site</div>
-    //   <div class="font-custom text-3xl">A bunch of mini projects</div>
-    //   <div class="flex mx-48">
-    //     <a
-    //       href="google.com"
-    //       class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow
-    //        hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-    //     >
-    //       <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-    //         <Link to="/password">
-    //           <button className="bg-blue-500 px-4 text-white ml-4 rounded-full">
-    //             The password game
-    //           </button>
-    //         </Link>
-    //       </h5>
-    //       <p class="font-normal text-gray-700 dark:text-gray-400">&^$#(@*#()</p>
-    //     </a>
-    //   </div>
-    // </header>
     <div>
       {loading && (
         <div role="status" class="h-screen flex items-center justify-center">
@@ -112,12 +101,20 @@ const Home = () => {
                       </a>
                     </li>
                     <li>
-                      <button
-                        onClick={() => scrollBottom()}
-                        class="projects ml-4 font-custom border-4 p-1 border-indigo-500/50 border-solid"
-                      >
-                        Games
-                      </button>
+                      <div className="flex items-center">
+                        <button
+                          onClick={() => scrollBottom()}
+                          class="projects ml-4 font-custom border-4 p-1 border-indigo-500/50 border-solid"
+                        >
+                          Games
+                        </button>
+                        <button
+                          onClick={() => scrollToProjects()}
+                          class="projects ml-4 font-custom border-4 p-1 border-indigo-500/50 border-solid"
+                        >
+                          Projects
+                        </button>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -150,6 +147,27 @@ const Home = () => {
               </div>
             </section>
           </div>
+        </div>
+        <div class="bg-projects flex items-center" id="projects">
+          <section class="nb-section">
+            <heading class="nb-heading flex flex-start">
+              ArcGIS Notebooks
+            </heading>
+            <div class="font-custom flex items-stretch">
+              <img class="notebooks"></img>
+              <div class="notebooks-section">
+                ArcGIS Notebooks provides a Jupyter Notebook (data science tool) experience
+                optimized for spatial analysis. Combine industry-leading spatial
+                analysis algorithms with open-source Python libraries to build
+                precise spatial data science models. Users ideate, iterate, and
+                share workflows in a secure environment—accessible from anywhere and 
+                convey results with beautiful, interactive maps and apps for
+                data storytelling that drives insight and action. I worked as a lead developer
+                on the ArcGIS Notebooks team at Esri where I helped build key features
+                like tasks scheduler, jupyterlab extension, internationalization, assessibility, etc.
+              </div>
+            </div>
+          </section>
         </div>
         <div class="bg">
           <div class="flex games-container">

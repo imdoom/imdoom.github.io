@@ -264,6 +264,42 @@ a.dotted-link:hover {
   background-size: cover;
 }
 
+.bg-projects {
+  background-image: url("./assets/pexels-marina-zvada-844583049-34434978.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nb-section {
+  backdrop-filter: blur(5px);
+}
+
+.nb-heading {
+  font-weight: 600;
+  font-size: 2.5vw;
+  color: white;
+  margin-left: 18vw;
+}
+
+.notebooks {
+  content: url("./assets/arcgis-notebooks-overview-banner-fg.png");
+  background-repeat: no-repeat;
+  height: 30vw;
+  border: 2px solid white; /* width style color */
+  border-radius: 5px; /* rounded corners */
+  margin-left: 5vw;
+}
+
+.notebooks-section {
+  font-weight: 400;
+  font-size: 1.5vw;
+  color: white;
+  width: 30vw;
+  margin-left: 5vw;
+}
+
 /* ======= Header ======= */
 .header {
   padding: 30px 30px 0 30px;
