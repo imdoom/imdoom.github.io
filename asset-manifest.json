@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.ad29dbc8.css",
-    "main.js": "/static/js/main.72d60092.js",
+    "main.css": "/static/css/main.7421423d.css",
+    "main.js": "/static/js/main.cea52680.js",
     "static/js/453.bb828c5d.chunk.js": "/static/js/453.bb828c5d.chunk.js",
     "static/media/IMG_5685-modified.png": "/static/media/IMG_5685-modified.51f6a2cf4af02f3773c6.png",
     "static/media/joanna-kosinska-1_CMoFsPfso-unsplash.jpg": "/static/media/joanna-kosinska-1_CMoFsPfso-unsplash.4731dd96f12e614f082e.jpg",
+    "static/media/pexels-marina-zvada-844583049-34434978.jpg": "/static/media/pexels-marina-zvada-844583049-34434978.5ae014612b330c03e203.jpg",
     "static/media/leone-venter-VieM9BdZKFo-unsplash.jpg": "/static/media/leone-venter-VieM9BdZKFo-unsplash.8ddad695876ebc61413a.jpg",
     "static/media/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg": "/static/media/georgie-cobbs-bKjHgo_Lbpo-unsplash.f1fb438d28b88655a158.jpg",
+    "static/media/arcgis-notebooks-overview-banner-fg.png": "/static/media/arcgis-notebooks-overview-banner-fg.fa715845eb36c3efca3d.png",
     "index.html": "/index.html",
-    "main.ad29dbc8.css.map": "/static/css/main.ad29dbc8.css.map",
-    "main.72d60092.js.map": "/static/js/main.72d60092.js.map",
+    "main.7421423d.css.map": "/static/css/main.7421423d.css.map",
+    "main.cea52680.js.map": "/static/js/main.cea52680.js.map",
     "453.bb828c5d.chunk.js.map": "/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad29dbc8.css",
-    "static/js/main.72d60092.js"
+    "static/css/main.7421423d.css",
+    "static/js/main.cea52680.js"
   ]
 }
