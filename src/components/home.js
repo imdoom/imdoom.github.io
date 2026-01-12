@@ -148,7 +148,26 @@ const Home = () => {
             </section>
           </div>
         </div>
-        <div class="bg-projects flex items-center" id="projects">
+        <div class="project-cs flex items-center" id="projects">
+          <section class="nb-section">
+            <heading class="nb-heading flex flex-start">
+              Courses Scheduler
+            </heading>
+            <div class="font-custom flex items-stretch">
+              <img class="cs"></img>
+              <div class="notebooks-section">
+                Schedules courses with various and conflicting time slots to
+                create a schedule for the semeseter and saves the schedule in
+                the student's login. Implemented SSO using google API. Built
+                with modern React and JavaScript. I worked as in a group to
+                implement this app as part of my masters level course callled
+                rapid prototyping at Northwestern University. I used Firebase
+                for authentication, fetching/updating live data and hosting.
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="project-nb flex items-center" id="projects">
           <section class="nb-section">
             <heading class="nb-heading flex flex-start">
               ArcGIS Notebooks
@@ -156,16 +175,42 @@ const Home = () => {
             <div class="font-custom flex items-stretch">
               <img class="notebooks"></img>
               <div class="notebooks-section">
-                ArcGIS Notebooks provides a Jupyter Notebook (data science tool) experience
-                optimized for spatial analysis. Combine industry-leading spatial
-                analysis algorithms with open-source Python libraries to build
-                precise spatial data science models. Users ideate, iterate, and
-                share workflows in a secure environment—accessible from anywhere and 
-                convey results with beautiful, interactive maps and apps for
-                data storytelling that drives insight and action. I worked as a lead developer
-                on the ArcGIS Notebooks team at Esri where I helped build key features
-                like tasks scheduler, jupyterlab extension, internationalization, assessibility, etc.
+                ArcGIS Notebooks provides a Jupyter Notebook (data science tool)
+                experience optimized for spatial analysis. Combine
+                industry-leading spatial analysis algorithms with open-source
+                Python libraries to build precise spatial data science models.
+                Users ideate, iterate, and share workflows in a secure
+                environment—accessible from anywhere and convey results with
+                beautiful, interactive maps and apps for data storytelling that
+                drives insight and action. I worked as a lead developer on the
+                ArcGIS Notebooks team at Esri where I helped build key features
+                like tasks scheduler, jupyterlab extension, localization,
+                internationalization, assessibility, etc.
               </div>
+            </div>
+          </section>
+        </div>
+        <div class="project-md flex items-center" id="projects">
+          <section class="nb-section">
+            <heading class="md-heading flex flex-start">Mortgage Diary</heading>
+            <div class="font-custom flex items-stretch">
+              <div class="md-section">
+                Mortgage diary is an application for booking appointments by
+                customers for their regular mortgage and loan needs for both
+                brands of the bank, RBS and Natwest. I worked as a functional
+                tester for this project. I had to check if the UI and its
+                components were up to specifications as per the standards and
+                FSD(functional specification document) specified along with the
+                functional aspects. Instances not matching with the guidelines
+                were logged in as defects in quality center tool. A defect
+                document had to be logged into the QC reproducing the exact
+                error with screenshots. I had to then assign the defects to the
+                designated developer and ensure that the fixed defects have met
+                the specified UI/UX criteria. Unsuccessful resolutions resulted
+                in reopening of defects and follow up comments between the
+                Business Analyst, testers and developers.
+              </div>
+              <img class="md"></img>
             </div>
           </section>
         </div>

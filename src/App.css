@@ -264,7 +264,7 @@ a.dotted-link:hover {
   background-size: cover;
 }
 
-.bg-projects {
+.project-nb {
   background-image: url("./assets/pexels-marina-zvada-844583049-34434978.jpg");
   height: 100vh;
   background-position: center;
@@ -272,23 +272,85 @@ a.dotted-link:hover {
   background-size: cover;
 }
 
-.nb-section {
+.project-md {
+  background-image: url("./assets/AdobeStock_591776696.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-cs {
+  background-image: url("./assets/AdobeStock_476250655.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nb-section, .cs-section {
   backdrop-filter: blur(5px);
 }
 
-.nb-heading {
+.nb-heading, .cs-heading {
   font-weight: 600;
   font-size: 2.5vw;
   color: white;
   margin-left: 18vw;
 }
 
+.md-heading {
+  font-weight: 600;
+  font-size: 2.5vw;
+  color: black;
+  margin-left: 62vw;
+}
+
 .notebooks {
   content: url("./assets/arcgis-notebooks-overview-banner-fg.png");
-  background-repeat: no-repeat;
   height: 30vw;
   border: 2px solid white; /* width style color */
   border-radius: 5px; /* rounded corners */
+  margin-left: 5vw;
+}
+
+.md {
+  content: url("./assets/mortgage-diary.png");
+  height: 30vw;
+  margin-left: 1vw;
+}
+
+.cs {
+  content: url("./assets/135154705-bf2946a9-6fb7-43e5-972f-a363325e6b79.png");
+  height: 30vw;
+  width: 50vw;
+  border: 2px solid white; /* width style color */
+  border-radius: 5px; /* rounded corners */
+  margin-left: 5vw;
+}
+
+.courses-scheduler {
+  content: url("./assets/135154705-bf2946a9-6fb7-43e5-972f-a363325e6b79.png");
+  background-repeat: no-repeat;
+  height: 30vw;
+  border: 2px solid black; /* width style color */
+  border-radius: 5px; /* rounded corners */
+  margin-left: 5vw;
+}
+
+.cs-section {
+  font-weight: 400;
+  font-size: 1.5vw;
+  color: white;
+  width: 30vw;
+  margin-left: 5vw;
+}
+
+.md-section {
+  font-weight: 400;
+  font-size: 1.5vw;
+  color: black;
+  width: 40vw;
   margin-left: 5vw;
 }
 
