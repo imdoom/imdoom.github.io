@@ -199,9 +199,10 @@ const Home = () => {
                 customers for their regular mortgage and loan needs for both
                 brands of the bank, RBS and Natwest. I worked on this app
                 extensisvely from design to production level development. We
-                used feedback from stakeholder to sucessfully iterate over
+                used feedback from our stakeholders to sucessfully iterate over
                 multiple versions of the app to reach the final product which
-                was widely used across our division.
+                was widely used across our division. Built using React and
+                Redux.
               </div>
               <img class="md"></img>
             </div>

@@ -317,7 +317,7 @@ a.dotted-link:hover {
 .md {
   content: url("./assets/mortgage-diary.png");
   height: 30vw;
-  margin-left: 1vw;
+  margin-left: 5vw;
 }
 
 .cs {
@@ -350,8 +350,8 @@ a.dotted-link:hover {
   font-weight: 400;
   font-size: 1.5vw;
   color: black;
-  width: 40vw;
-  margin-left: 5vw;
+  width: 30vw;
+  margin-left: 10vw;
 }
 
 .notebooks-section {
