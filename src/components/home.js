@@ -197,18 +197,11 @@ const Home = () => {
               <div class="md-section">
                 Mortgage diary is an application for booking appointments by
                 customers for their regular mortgage and loan needs for both
-                brands of the bank, RBS and Natwest. I worked as a functional
-                tester for this project. I had to check if the UI and its
-                components were up to specifications as per the standards and
-                FSD(functional specification document) specified along with the
-                functional aspects. Instances not matching with the guidelines
-                were logged in as defects in quality center tool. A defect
-                document had to be logged into the QC reproducing the exact
-                error with screenshots. I had to then assign the defects to the
-                designated developer and ensure that the fixed defects have met
-                the specified UI/UX criteria. Unsuccessful resolutions resulted
-                in reopening of defects and follow up comments between the
-                Business Analyst, testers and developers.
+                brands of the bank, RBS and Natwest. I worked on this app
+                extensisvely from design to production level development. We
+                used feedback from stakeholder to sucessfully iterate over
+                multiple versions of the app to reach the final product which
+                was widely used across our division.
               </div>
               <img class="md"></img>
             </div>
