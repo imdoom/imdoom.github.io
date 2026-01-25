@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d850049c.css",
-    "main.js": "/static/js/main.0205fbdd.js",
+    "main.js": "/static/js/main.2fb48b73.js",
     "static/js/453.bb828c5d.chunk.js": "/static/js/453.bb828c5d.chunk.js",
     "static/media/IMG_5685-modified.png": "/static/media/IMG_5685-modified.51f6a2cf4af02f3773c6.png",
     "static/media/joanna-kosinska-1_CMoFsPfso-unsplash.jpg": "/static/media/joanna-kosinska-1_CMoFsPfso-unsplash.4731dd96f12e614f082e.jpg",
@@ -12,11 +12,11 @@
     "static/media/135154705-bf2946a9-6fb7-43e5-972f-a363325e6b79.png": "/static/media/135154705-bf2946a9-6fb7-43e5-972f-a363325e6b79.6fd43fd0cdec94c3df59.png",
     "index.html": "/index.html",
     "main.d850049c.css.map": "/static/css/main.d850049c.css.map",
-    "main.0205fbdd.js.map": "/static/js/main.0205fbdd.js.map",
+    "main.2fb48b73.js.map": "/static/js/main.2fb48b73.js.map",
     "453.bb828c5d.chunk.js.map": "/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d850049c.css",
-    "static/js/main.0205fbdd.js"
+    "static/js/main.2fb48b73.js"
   ]
 }
