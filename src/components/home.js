@@ -278,91 +278,97 @@ const Home = () => {
                 </p>
               </a>
             </Link>
-            <a
-              href="/tictactoe"
-              class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer"
-            >
-              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <button className="bg-purple-500 px-4 text-white ml-4 rounded-full">
-                  ⭕ Tic Tac Toe
-                </button>
-              </h5>
-              <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                Classic Tic Tac Toe game — Challenge yourself against AI
-                opponent.
-              </p>
-            </a>
-            <a
-              href="/flappybird"
-              class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer"
-            >
-              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <button className="bg-red-500 px-4 text-white ml-4 rounded-full">
-                  🎮 Flappy Bird
-                </button>
-              </h5>
-              <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                Navigate through obstacles and beat your high score.
-              </p>
-            </a>
-            <a
-              href="/guessthenumber"
-              class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer"
-            >
-              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <button className="bg-orange-500 px-4 text-white ml-4 rounded-full">
-                  🎲 Guess the Number
-                </button>
-              </h5>
-              <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                Guess the random number with minimum attempts possible.
-              </p>
-            </a>
-            <a
-              href="/whackamole"
-              class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer"
-            >
-              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <button className="bg-indigo-500 px-4 text-white ml-4 rounded-full">
-                  🔨 Whack-a-Mole
-                </button>
-              </h5>
-              <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                Click fast to hit the moles and rack up your score.
-              </p>
-            </a>
-            <a
-              href="/reactiontime"
-              class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer"
-            >
-              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <button className="bg-cyan-500 px-4 text-white ml-4 rounded-full">
-                  💪 Reaction Time
-                </button>
-              </h5>
-              <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                Test your reflexes and measure your reaction speed.
-              </p>
-            </a>
-            <a
-              href="/2048"
-              class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer"
-            >
-              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <button className="bg-lime-500 px-4 text-white ml-4 rounded-full">
-                  🎯 2048 Game
-                </button>
-              </h5>
-              <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                Slide tiles to combine them and reach the 2048 tile.
-              </p>
-            </a>
+            <Link to="/tictactoe">
+              <a
+                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
+           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              >
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <button className="bg-purple-500 px-4 text-white ml-4 rounded-full">
+                    ⭕ Tic Tac Toe
+                  </button>
+                </h5>
+                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
+                  Classic Tic Tac Toe game — Challenge yourself against AI
+                  opponent.
+                </p>
+              </a>
+            </Link>
+            <Link to="/flappybird">
+              <a
+                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
+           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              >
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <button className="bg-red-500 px-4 text-white ml-4 rounded-full">
+                    🎮 Flappy Bird
+                  </button>
+                </h5>
+                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
+                  Navigate through obstacles and beat your high score.
+                </p>
+              </a>
+            </Link>
+            <Link to="/guessthenumber">
+              <a
+                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
+           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              >
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <button className="bg-orange-500 px-4 text-white ml-4 rounded-full">
+                    🎲 Guess the Number
+                  </button>
+                </h5>
+                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
+                  Guess the random number with minimum attempts possible.
+                </p>
+              </a>
+            </Link>
+            <Link to="/whackamole">
+              <a
+                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
+           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              >
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <button className="bg-indigo-500 px-4 text-white ml-4 rounded-full">
+                    🔨 Whack-a-Mole
+                  </button>
+                </h5>
+                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
+                  Click fast to hit the moles and rack up your score.
+                </p>
+              </a>
+            </Link>
+            <Link to="/reactiontime">
+              <a
+                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
+           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              >
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <button className="bg-cyan-500 px-4 text-white ml-4 rounded-full">
+                    💪 Reaction Time
+                  </button>
+                </h5>
+                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
+                  Test your reflexes and measure your reaction speed.
+                </p>
+              </a>
+            </Link>
+            <Link to="/2048">
+              <a
+                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
+           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              >
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <button className="bg-lime-500 px-4 text-white ml-4 rounded-full">
+                    🎯 2048 Game
+                  </button>
+                </h5>
+                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
+                  Slide tiles to combine them and reach the 2048 tile.
+                </p>
+              </a>
+            </Link>
           </div>
         </div>
       </div>
