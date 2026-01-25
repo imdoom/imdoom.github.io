@@ -264,38 +264,17 @@ a.dotted-link:hover {
   background-size: cover;
 }
 
-.project-nb {
-  background-image: url("./assets/pexels-marina-zvada-844583049-34434978.jpg");
+.project {
+  /* background-image: url("./assets/pexels-marina-zvada-844583049-34434978.jpg"); */
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.project-md {
-  background-image: url("./assets/AdobeStock_591776696.jpeg");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project-cs {
-  background-image: url("./assets/AdobeStock_476250655.jpeg");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.nb-section, .cs-section {
-  backdrop-filter: blur(5px);
 }
 
 .nb-heading, .cs-heading {
   font-weight: 600;
   font-size: 2.5vw;
-  color: white;
   margin-left: 18vw;
 }
 
@@ -309,7 +288,7 @@ a.dotted-link:hover {
 .notebooks {
   content: url("./assets/arcgis-notebooks-overview-banner-fg.png");
   height: 30vw;
-  border: 2px solid white; /* width style color */
+  border: 2px solid black; /* width style color */
   border-radius: 5px; /* rounded corners */
   margin-left: 5vw;
 }
@@ -352,14 +331,23 @@ a.dotted-link:hover {
   color: black;
   width: 30vw;
   margin-left: 10vw;
+  margin-top: 5vh;
+}
+
+.pf-section {
+  font-weight: 400;
+  font-size: 1.5vw;
+  color: black;
+  width: 30vw;
+  margin-left: 10vw;
 }
 
 .notebooks-section {
   font-weight: 400;
   font-size: 1.5vw;
-  color: white;
   width: 30vw;
   margin-left: 5vw;
+  margin-top: 5vh;
 }
 
 /* ======= Header ======= */

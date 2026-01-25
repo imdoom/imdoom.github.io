@@ -129,45 +129,26 @@ const Home = () => {
               <div class="excuse-me">
                 <p class="font-custom">
                   Hi! I started my front-end journey 6 years ago when I was
-                  asked to build a progress dashboard for my team at my first
-                  job. Ever since I have been dabbling in banners, navbars,
-                  buttons, dropdowns and the like. I am a visual person so the
-                  allure of what you code is what you see was compeling enough
-                  for me to keep tinkering with UI. I moved to the US about 6
-                  years ago where I pursued my masters degree in Computer
-                  Science at Northwestern University. Over there, I focused on
-                  human computer interaction and took a bunch of UI focused
-                  projects and courses. I learnt a lot about usability, rapid
-                  prototyping, design thinking, accessibility, working with
-                  sprint teams, React/JSX, etc. My career includes stints with
-                  two multinational corporations. I'm looking for my next
-                  venture where I can express myself creatively and work on
-                  interesting collaborative projects.
+                  asked to build a CI/CD progress dashboard for my team at my
+                  first job. Ever since I have been dabbling in banners,
+                  navbars, buttons, dropdowns and the like. I am a visual person
+                  so the allure of what you code is what you see was compeling
+                  enough for me to keep tinkering with UI/UX. I moved to the US
+                  about 6 years ago where I pursued my masters degree in
+                  Computer Science at Northwestern University. Over there, I
+                  focused on human computer interaction and took a bunch of UI
+                  focused projects and courses. I learnt a lot about usability,
+                  rapid prototyping, design thinking, accessibility, working in
+                  sprints, React/JSX, etc. My career includes stints with two
+                  multinational corporations. I'm looking for my next venture
+                  where I can express myself creatively and work on user-centric
+                  cutting edge projects.
                 </p>
               </div>
             </section>
           </div>
         </div>
-        <div class="project-cs flex items-center" id="projects">
-          <section class="nb-section">
-            <heading class="nb-heading flex flex-start">
-              Courses Scheduler
-            </heading>
-            <div class="font-custom flex items-stretch">
-              <img class="cs"></img>
-              <div class="notebooks-section">
-                Schedules courses with various and conflicting time slots to
-                create a schedule for the semeseter and saves the schedule in
-                the student's login. Implemented SSO using google API. Built
-                with modern React and JavaScript. I worked as in a group to
-                implement this app as part of my masters level course callled
-                rapid prototyping at Northwestern University. I used Firebase
-                for authentication, fetching/updating live data and hosting.
-              </div>
-            </div>
-          </section>
-        </div>
-        <div class="project-nb flex items-center" id="projects">
+        <div class="project flex items-center" id="projects">
           <section class="nb-section">
             <heading class="nb-heading flex flex-start">
               ArcGIS Notebooks
@@ -175,52 +156,93 @@ const Home = () => {
             <div class="font-custom flex items-stretch">
               <img class="notebooks"></img>
               <div class="notebooks-section">
-                ArcGIS Notebooks provides a Jupyter Notebook (data science tool)
-                experience optimized for spatial analysis. Combine
-                industry-leading spatial analysis algorithms with open-source
-                Python libraries to build precise spatial data science models.
-                Users ideate, iterate, and share workflows in a secure
+                Integrated jupyter notebook (data science tool) with entrprize
+                software. Users ideate, iterate, and share workflows in a secure
                 environment—accessible from anywhere and convey results with
                 beautiful, interactive maps and apps for data storytelling that
-                drives insight and action. I worked as a lead developer on the
+                drives insight and action. I lead the UI/UX development on the
                 ArcGIS Notebooks team at Esri where I helped build key features
-                like tasks scheduler, jupyterlab extension, localization,
-                internationalization, assessibility, etc.
+                like tasks scheduler, jupyterlab extension, collboration &
+                sharing, spacial data analysis, etc. and implemented inclusive
+                design principles like localization, internationalization,
+                assessibility, responsive design etc.
               </div>
             </div>
           </section>
         </div>
-        <div class="project-md flex items-center" id="projects">
+        <div class="project flex items-center" id="projects">
           <section class="nb-section">
             <heading class="md-heading flex flex-start">Mortgage Diary</heading>
             <div class="font-custom flex items-stretch">
-              <div class="md-section">
+              <div class="md-section flex justify-center">
                 Mortgage diary is an application for booking appointments by
                 customers for their regular mortgage and loan needs for both
                 brands of the bank, RBS and Natwest. I worked on this app
                 extensisvely from design to production level development. We
-                used feedback from our stakeholders to sucessfully iterate over
-                multiple versions of the app to reach the final product which
-                was widely used across our division. Built using React and
-                Redux.
+                used feedback from our users and stakeholders to sucessfully
+                iterate over multiple versions of the app to reach the final
+                product which was widely used across our customer
+                division(mortgage). Built using React and Redux.
+              </div>
+              <img class="md"></img>
+            </div>
+          </section>
+        </div>
+        <div class="project flex items-center" id="projects">
+          <section class="nb-section">
+            <heading class="nb-heading flex flex-start">
+              Courses Scheduler
+            </heading>
+            <div class="font-custom flex items-stretch">
+              <img class="cs"></img>
+              <div class="notebooks-section">
+                Course scheduler schedules time conflicting courses with various
+                and to create and modify schedules for the semeseter and saves
+                the schedule in the student's login. Implemented SSO using
+                google API. Built with modern React and JavaScript. I worked as
+                in a group to build this app as part of my university course
+                callled rapid prototyping at Northwestern University. Built with
+                React/TypeScript and Firebase for authentication,
+                fetching/updating live data and hosting.
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="project flex items-center" id="projects">
+          <section>
+            <heading class="md-heading flex flex-start">Product finder</heading>
+            <div class="font-custom flex items-stretch">
+              <div class="pf-section flex justify-center">
+                Product finder is a legacy banking application which aims to
+                find products based on customer requirements and previous
+                purshases. I worked on both web and mobile versions keeping in
+                mind the responsiveness and custom components requirements for
+                tablets. Various UX considerations were implemented such as
+                checkbox labels working in tandem with the checkbox, nearest
+                value rounding for denominations, progress panels highlighting
+                completed steps, breadcrumb progress bars showing mid steps,
+                responsive scaling in vertical as well as horizontal display in
+                iPad and scaling with screen size in the desktop application.
+                The technology stack used was HTML5/Css3 and Bootstrap in
+                front-end side and ASP.NET for back-end.
               </div>
               <img class="md"></img>
             </div>
           </section>
         </div>
         <div class="bg">
-          <div class="flex games-container">
+          <div class="flex games-container justify-center gap-4 flex-wrap px-4">
             <Link to="/clickspeed">
               <a
-                class="block mx-10 max-w-sm p-6 border border-black bg-white rounded-lg shadow
+                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
            hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
               >
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <button className="bg-green-500 px-4 text-white ml-4 rounded-full">
-                    Click Speed Tester
+                    ⚡ Click Speed Tester
                   </button>
                 </h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">
+                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
                   Test your clicking speed in 10 seconds and save your best
                   score.
                 </p>
@@ -228,49 +250,119 @@ const Home = () => {
             </Link>
             <Link to="/password">
               <a
-                class="block max-w-sm p-6 border border-black bg-white rounded-lg shadow
+                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
            hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
               >
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <button className="bg-blue-500 px-4 text-white ml-4 rounded-full">
-                    The password game
+                    🔐 The password game
                   </button>
                 </h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">
+                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
                   How good are you at creating strong passwords?
                 </p>
               </a>
             </Link>
             <Link to="/memory">
               <a
-                class="block mx-10 max-w-sm p-6 border border-black bg-white rounded-lg shadow
+                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
            hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
               >
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <button className="bg-pink-500 px-4 text-white ml-4 rounded-full">
-                    Memory Sequence
+                    🧠 Memory Sequence
                   </button>
                 </h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">
+                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
                   Classic Simon-like memory game — repeat the color sequence.
                 </p>
               </a>
             </Link>
-          </div>
-          <div class="flex justify-center mt-6">
-            <div
-              class="block mx-10 max-w-sm p-6 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            <a
+              href="/tictactoe"
+              class="block p-4 w-56 border border-black bg-white rounded-lg shadow
+           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer"
             >
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <button className="bg-yellow-500 px-4 text-white ml-4 rounded-full">
-                  Adding more games...
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <button className="bg-purple-500 px-4 text-white ml-4 rounded-full">
+                  ⭕ Tic Tac Toe
                 </button>
               </h5>
-              <p class="font-normal text-gray-700 dark:text-gray-400">
-                I'm constantly adding new mini-games — check back soon.
+              <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
+                Classic Tic Tac Toe game — Challenge yourself against AI
+                opponent.
               </p>
-            </div>
+            </a>
+            <a
+              href="/flappybird"
+              class="block p-4 w-56 border border-black bg-white rounded-lg shadow
+           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer"
+            >
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <button className="bg-red-500 px-4 text-white ml-4 rounded-full">
+                  🎮 Flappy Bird
+                </button>
+              </h5>
+              <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
+                Navigate through obstacles and beat your high score.
+              </p>
+            </a>
+            <a
+              href="/guessthenumber"
+              class="block p-4 w-56 border border-black bg-white rounded-lg shadow
+           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer"
+            >
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <button className="bg-orange-500 px-4 text-white ml-4 rounded-full">
+                  🎲 Guess the Number
+                </button>
+              </h5>
+              <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
+                Guess the random number with minimum attempts possible.
+              </p>
+            </a>
+            <a
+              href="/whackamole"
+              class="block p-4 w-56 border border-black bg-white rounded-lg shadow
+           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer"
+            >
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <button className="bg-indigo-500 px-4 text-white ml-4 rounded-full">
+                  🔨 Whack-a-Mole
+                </button>
+              </h5>
+              <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
+                Click fast to hit the moles and rack up your score.
+              </p>
+            </a>
+            <a
+              href="/reactiontime"
+              class="block p-4 w-56 border border-black bg-white rounded-lg shadow
+           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer"
+            >
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <button className="bg-cyan-500 px-4 text-white ml-4 rounded-full">
+                  💪 Reaction Time
+                </button>
+              </h5>
+              <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
+                Test your reflexes and measure your reaction speed.
+              </p>
+            </a>
+            <a
+              href="/2048"
+              class="block p-4 w-56 border border-black bg-white rounded-lg shadow
+           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 cursor-pointer"
+            >
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <button className="bg-lime-500 px-4 text-white ml-4 rounded-full">
+                  🎯 2048 Game
+                </button>
+              </h5>
+              <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
+                Slide tiles to combine them and reach the 2048 tile.
+              </p>
+            </a>
           </div>
         </div>
       </div>
