@@ -106,7 +106,7 @@ const Home = () => {
                           onClick={() => scrollBottom()}
                           class="projects ml-4 font-custom border-4 p-1 border-indigo-500/50 border-solid"
                         >
-                          Games
+                          Mini-Games
                         </button>
                         <button
                           onClick={() => scrollToProjects()}
