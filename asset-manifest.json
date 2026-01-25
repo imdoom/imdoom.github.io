@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b03db14.css",
-    "main.js": "/static/js/main.750a7694.js",
+    "main.css": "/static/css/main.d850049c.css",
+    "main.js": "/static/js/main.0205fbdd.js",
     "static/js/453.bb828c5d.chunk.js": "/static/js/453.bb828c5d.chunk.js",
     "static/media/IMG_5685-modified.png": "/static/media/IMG_5685-modified.51f6a2cf4af02f3773c6.png",
-    "static/media/AdobeStock_476250655.jpeg": "/static/media/AdobeStock_476250655.6a4a6d8b071d0f10d4b5.jpeg",
     "static/media/joanna-kosinska-1_CMoFsPfso-unsplash.jpg": "/static/media/joanna-kosinska-1_CMoFsPfso-unsplash.4731dd96f12e614f082e.jpg",
-    "static/media/AdobeStock_591776696.jpeg": "/static/media/AdobeStock_591776696.72ecb466c5c818721478.jpeg",
-    "static/media/pexels-marina-zvada-844583049-34434978.jpg": "/static/media/pexels-marina-zvada-844583049-34434978.5ae014612b330c03e203.jpg",
     "static/media/leone-venter-VieM9BdZKFo-unsplash.jpg": "/static/media/leone-venter-VieM9BdZKFo-unsplash.8ddad695876ebc61413a.jpg",
     "static/media/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg": "/static/media/georgie-cobbs-bKjHgo_Lbpo-unsplash.f1fb438d28b88655a158.jpg",
     "static/media/arcgis-notebooks-overview-banner-fg.png": "/static/media/arcgis-notebooks-overview-banner-fg.fa715845eb36c3efca3d.png",
     "static/media/mortgage-diary.png": "/static/media/mortgage-diary.6ea9d12214b6903d2da1.png",
     "static/media/135154705-bf2946a9-6fb7-43e5-972f-a363325e6b79.png": "/static/media/135154705-bf2946a9-6fb7-43e5-972f-a363325e6b79.6fd43fd0cdec94c3df59.png",
     "index.html": "/index.html",
-    "main.5b03db14.css.map": "/static/css/main.5b03db14.css.map",
-    "main.750a7694.js.map": "/static/js/main.750a7694.js.map",
+    "main.d850049c.css.map": "/static/css/main.d850049c.css.map",
+    "main.0205fbdd.js.map": "/static/js/main.0205fbdd.js.map",
     "453.bb828c5d.chunk.js.map": "/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b03db14.css",
-    "static/js/main.750a7694.js"
+    "static/css/main.d850049c.css",
+    "static/js/main.0205fbdd.js"
   ]
 }
