@@ -54,14 +54,13 @@ const WhackAMole = () => {
   const Mole = ({ index }) => (
     <button
       onClick={() => hitMole(index)}
-      className={`w-20 h-20 rounded-full border-4 font-bold text-2xl transition-all ${
+      aria-label={index === activeMole ? "Active mole" : "Empty hole"}
+      className={`w-20 h-20 rounded-full border-4 transition-all ${
         index === activeMole
           ? "bg-red-500 border-red-600 scale-110"
           : "bg-gray-300 border-gray-400 dark:bg-gray-600 dark:border-gray-700"
       }`}
-    >
-      {index === activeMole ? "🔨" : "🐹"}
-    </button>
+    ></button>
   );
 
   return (

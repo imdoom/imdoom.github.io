@@ -1,14 +1,8 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import src from "../assets/IMG_5685-modified.png";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
-
-  const scrollBottom = () => {
-    // smooth animated scroll to bottom
-    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-  };
 
   const scrollToProjects = () => {
     const el = document.getElementById("projects");
@@ -18,17 +12,6 @@ const Home = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   };
-
-  useEffect(() => {
-    // If navigated with a hash to the games section, scroll after loading finishes
-    if (!loading && window.location.hash === "#games") {
-      scrollBottom();
-      // remove the hash so repeated navigation doesn't always auto-scroll
-      try {
-        window.history.replaceState(null, "", window.location.pathname);
-      } catch (e) {}
-    }
-  }, [loading]);
 
   return (
     <div>
@@ -103,12 +86,6 @@ const Home = () => {
                     <li>
                       <div className="flex items-center">
                         <button
-                          onClick={() => scrollBottom()}
-                          class="projects ml-4 font-custom border-4 p-1 border-indigo-500/50 border-solid"
-                        >
-                          Mini-Games
-                        </button>
-                        <button
                           onClick={() => scrollToProjects()}
                           class="projects ml-4 font-custom border-4 p-1 border-indigo-500/50 border-solid"
                         >
@@ -128,7 +105,7 @@ const Home = () => {
               </div>
               <div class="excuse-me">
                 <p class="font-custom">
-                  Hi! I started my front-end journey 6 years ago when I was
+                  Hi! When I first started my frontend journey I was
                   asked to build a CI/CD progress dashboard for my team at my
                   first job. Ever since I have been dabbling in banners,
                   navbars, buttons, dropdowns and the like. I am a visual person
@@ -229,147 +206,6 @@ const Home = () => {
               <img class="pf"></img>
             </div>
           </section>
-        </div>
-        <div class="bg">
-          <div class="flex games-container justify-center gap-4 flex-wrap px-4">
-            <Link to="/clickspeed">
-              <a
-                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-              >
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <button className="bg-green-500 px-4 text-white ml-4 rounded-full">
-                    ⚡ Click Speed Tester
-                  </button>
-                </h5>
-                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                  Test your clicking speed in 10 seconds and save your best
-                  score.
-                </p>
-              </a>
-            </Link>
-            <Link to="/password">
-              <a
-                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-              >
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <button className="bg-blue-500 px-4 text-white ml-4 rounded-full">
-                    🔐 The password game
-                  </button>
-                </h5>
-                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                  How good are you at creating strong passwords?
-                </p>
-              </a>
-            </Link>
-            <Link to="/memory">
-              <a
-                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-              >
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <button className="bg-pink-500 px-4 text-white ml-4 rounded-full">
-                    🧠 Memory Sequence
-                  </button>
-                </h5>
-                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                  Classic Simon-like memory game — repeat the color sequence.
-                </p>
-              </a>
-            </Link>
-            <Link to="/tictactoe">
-              <a
-                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-              >
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <button className="bg-purple-500 px-4 text-white ml-4 rounded-full">
-                    ⭕ Tic Tac Toe
-                  </button>
-                </h5>
-                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                  Classic Tic Tac Toe game — Challenge yourself against AI
-                  opponent.
-                </p>
-              </a>
-            </Link>
-            <Link to="/flappybird">
-              <a
-                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-              >
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <button className="bg-red-500 px-4 text-white ml-4 rounded-full">
-                    🎮 Flappy Bird
-                  </button>
-                </h5>
-                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                  Navigate through obstacles and beat your high score.
-                </p>
-              </a>
-            </Link>
-            <Link to="/guessthenumber">
-              <a
-                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-              >
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <button className="bg-orange-500 px-4 text-white ml-4 rounded-full">
-                    🎲 Guess the Number
-                  </button>
-                </h5>
-                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                  Guess the random number with minimum attempts possible.
-                </p>
-              </a>
-            </Link>
-            <Link to="/whackamole">
-              <a
-                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-              >
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <button className="bg-indigo-500 px-4 text-white ml-4 rounded-full">
-                    🔨 Whack-a-Mole
-                  </button>
-                </h5>
-                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                  Click fast to hit the moles and rack up your score.
-                </p>
-              </a>
-            </Link>
-            <Link to="/reactiontime">
-              <a
-                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-              >
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <button className="bg-cyan-500 px-4 text-white ml-4 rounded-full">
-                    💪 Reaction Time
-                  </button>
-                </h5>
-                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                  Test your reflexes and measure your reaction speed.
-                </p>
-              </a>
-            </Link>
-            <Link to="/2048">
-              <a
-                class="block p-4 w-56 border border-black bg-white rounded-lg shadow
-           hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-              >
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  <button className="bg-lime-500 px-4 text-white ml-4 rounded-full">
-                    🎯 2048 Game
-                  </button>
-                </h5>
-                <p class="font-normal text-sm text-gray-700 dark:text-gray-400">
-                  Slide tiles to combine them and reach the 2048 tile.
-                </p>
-              </a>
-            </Link>
-          </div>
         </div>
       </div>
     </div>
