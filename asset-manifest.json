@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ce3cac66.css",
-    "main.js": "/static/js/main.e66ba225.js",
+    "main.js": "/static/js/main.e4785bed.js",
     "static/js/453.bb828c5d.chunk.js": "/static/js/453.bb828c5d.chunk.js",
     "static/media/IMG_5685-modified.png": "/static/media/IMG_5685-modified.51f6a2cf4af02f3773c6.png",
     "static/media/joanna-kosinska-1_CMoFsPfso-unsplash.jpg": "/static/media/joanna-kosinska-1_CMoFsPfso-unsplash.4731dd96f12e614f082e.jpg",
@@ -13,11 +13,11 @@
     "static/media/product-finder.png": "/static/media/product-finder.6184f99556b3cc5667de.png",
     "index.html": "/index.html",
     "main.ce3cac66.css.map": "/static/css/main.ce3cac66.css.map",
-    "main.e66ba225.js.map": "/static/js/main.e66ba225.js.map",
+    "main.e4785bed.js.map": "/static/js/main.e4785bed.js.map",
     "453.bb828c5d.chunk.js.map": "/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce3cac66.css",
-    "static/js/main.e66ba225.js"
+    "static/js/main.e4785bed.js"
   ]
 }
