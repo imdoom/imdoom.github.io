@@ -133,9 +133,9 @@ const Home = () => {
             <div class="font-custom flex items-stretch">
               <img class="notebooks"></img>
               <div class="notebooks-section">
-                Integrated jupyter notebook (data science tool) with entrprize
-                software. Users ideate, iterate, and share workflows in a secure
-                environment—accessible from anywhere and convey results with
+                Integrated jupyter notebook (data science tool) with entrprize app. 
+                Users ideate, iterate, and share workflows in a secure
+                environment accessible from anywhere and convey results with
                 beautiful, interactive maps and apps for data storytelling that
                 drives insight and action. I lead the UI/UX development on the
                 ArcGIS Notebooks team at Esri where I built key features like
